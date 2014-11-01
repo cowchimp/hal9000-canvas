@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	speak();
 
 	function speak() {
-		if(!window.speechSynthesis) {
+		if(!window.speechSynthesis || !window.SpeechSynthesisUtterance) {
 			hal9000.animate();
 			return;
 		}
